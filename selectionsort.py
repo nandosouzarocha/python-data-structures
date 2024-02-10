@@ -19,7 +19,8 @@ def selection_sort(a_list):
 
 
 if __name__ == '__main__':
-    random_list = gen_random_list()
+    list_type_choice = select_list_type()
+    random_list = program_startup(list_type=list_type_choice)
     print(random_list)
     selection_sort(random_list)
     print(random_list)
